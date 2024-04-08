@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/pay.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <link rel="icon" href="images/favicon.png">
+    <title>Alextrade PRO</title>
+</head>
+<body>
+    <section class="sectionPay">
+        <div class="container">
+            <div class="sectionPay__left">
+                <div class="sectionPay__container">
+                    <div class="sectionPay__title">
+                        <h1>
+                            Curso de Trading
+                        </h1>
+                        <p>
+                            por Alejandro Henríquez
+                        </p>
+                    </div>
+                    <div class="sectionPay__vip">
+                        <div class="vip">
+                           <p>
+                            Base
+                           </p>
+                        </div>
+                        <div class="num">
+                            #35264555
+                        </div>
+                        <div class="usd">
+                            <div>
+                                <!-- <div class="block"></div> -->
+                                <div class="text">
+                                    <div class="top">
+                                        <span>USD</span>
+                                        <div class="img">
+                                            <img src="images/Polygon1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="bot">
+                                        PESO 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionPay__content">
+                        <div class="sectionPay__total">
+                            <div class="sectionPay__card">
+                                <p>
+                                    Coste total:
+                                </p>
+                                <h1 class="tariff">
+                                    $123
+                                </h1>
+                            </div>
+                            <!-- <div class="sectionPay__card">
+                                <p>
+                                    La cuantía del descuento:
+                                </p>
+                                <h1>
+                                    25 <span>%</span>
+                                </h1>
+                            </div>
+                            <div class="sectionPay__card">
+                                <p>
+                                    Precio ahora:
+                                </p>
+                                <h1 class="newTariff">
+                                    $92
+                                </h1>
+                            </div> -->
+                        </div>
+                        <div class="sectionPay__timer">
+                            Hasta el final de la promoción: 
+                            <span>
+                                <div class="counter" id="clock" data-hour="1" data-minutes="30">
+                                    <ul>
+                                        <li><span id="hours">01</span></li>
+                                        <li><sup> : </sup></li>
+                                        <li><span id="minutes">26</span></li>
+                                        <li><sup> : </sup></li>
+                                        <li><span id="seconds">35</span></li>
+                                    </ul>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionPay__right">
+                <div class="sectionPay__img">
+                    <img src="images/card-pay.png" alt="">
+                </div>
+                <div class="sectionPay__email">
+                    <div class="yourName">
+                        <input class="name-inp" type="text" name="name" id="" placeholder="Su nombre">
+                    </div>
+                    <div class="yourEmail">
+                        <input class="email-inp" type="email" name="email" id="" placeholder="Email">
+                    </div>
+                    <div class="yourTelegram">
+                        <input class="telegram-inp" type="text" name="message" id="" placeholder="Telegram">
+                    </div>
+                </div>
+                <div class="sectionPay__right--container">
+                    <div class="sectionPay__form">
+                        <form action="">
+                            <input type="hidden" class="product_name" name="product_name" id="product_name" value="">
+                            <div id="payment-request-button-apple"></div>
+                            <div id="payment-request-button"></div>
+                            <div class="carNumber">
+                                <div id="card-element" class="StripeElement StripeElement--empty form-payment__number" style="font-size: .8rem;
+                                border: 1px solid #D6D7D8;
+                                padding: 0.950rem;
+                                background: #FFFFFF;
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                border-radius: 11px;
+                                margin-bottom: 10px;
+                                letter-spacing: 1px;">
+                                </div>
+                            </div>
+                            <div id="card-errors" style="height: 25px;"></div>
+                            <div class="cardMMYY__CVC">
+                                <div class="cardMMYY">
+                                    <div id="card-element2" class="StripeElement StripeElement--empty form-payment__date" style="font-size: .8rem;
+                                    border: 1px solid #D6D7D8;
+                                    padding: 0.950rem;
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                    border-radius: 11px;
+                                    margin-bottom: 10px;
+                                    letter-spacing: 1px;">
+                                    </div>
+                                </div>
+                                <div class="cardCVC">
+                                    <div id="card-element3" class="StripeElement StripeElement--empty form-payment__cvv" style="font-size: .8rem;
+                                    border: 1px solid #D6D7D8;
+                                    padding: 0.950rem;
+                                    background: #FFFFFF;
+                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                                    border-radius: 11px;
+                                    margin-bottom: 10px;
+                                    letter-spacing: 1px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardName">
+                                <input type="text" name="" id="" placeholder="Nombre del titular de la tarjeta">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="sectionPay__text">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit, sed do eiusmod tempor 
+                            incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis 
+                            nostrud exercitation ullamco laboris 
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <div class="check">
+                            <input type="checkbox" name="" id="">
+                            <p>
+                                Acepto los términos y condiciones
+                            </p>
+                        </div>
+                        <div class="sectionPay__opl">
+                            <button class="btn-opl">
+                                Pagar ahora
+                            </button>
+                        </div>
+                        <div class="wrapper-loader modal-loader" style="margin-top: 20px;">
+                            <div class="lds-spinner">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/countdown.js"></script>
+    <script src="js/pay4.js"></script>
+</body>
+</html>
